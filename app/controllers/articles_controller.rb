@@ -21,8 +21,9 @@ class ArticlesController < ApplicationController
 
   # add edit and update methods here
   def edit
-    end
+    @article = Article.find(params[:id])
+  end
 
-    def update
+  def update
   end
 end
